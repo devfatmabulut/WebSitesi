@@ -4,22 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vies Mühendislik - Endüstriyel Makine İmalat</title>
-     <!-- Mobile Specific Metas
-================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Construction Html5 Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="plugins/animate-css/animate.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="images/favicon.png">  
+
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Üst çubuk ve menü yüksekliği */
+        #top-bar {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        /* Menünün yüksekliği */
+        .navbar {
+            height: 112px; /* Aynı yükseklik */
+            background-color: #3d3d3d; /* Arka plan rengi */
+        }
+
+        /* Menü yazı fontu küçültme */
+        .nav-link {
+            color: white !important; /* Yazı rengi beyaz */
+            font-size: 12px; /* İstediğiniz font boyutu */
+        }
+
+        .nav-link:hover {
+            color: #f47c11 !important; /* Hover durumu rengi */
+        }
+
+        /* Butonun aynı satırda kalması için gerekli CSS */
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0; /* Alt marjı kaldır */
+        }
+
+        .header-get-a-quote {
+            margin-left: auto; /* Sağda yerleşim için */
+        }
+        
+        /* Row genişliği */
+        .row {
+            width: 100%; /* Tam genişlik */
+            margin-left: 0; /* Sol marjı kaldır */
+            margin-right: 0; /* Sağ marjı kaldır */
+        }
+
+        /* Buton yüksekliği ile aynı hizaya getirme */
+        .header-get-a-quote .btn {
+            height: 40px; /* İstediğiniz buton yüksekliği */
+            line-height: 1.5; /* Dikey hizalama için */
+            background-color: #f47c11; /* Buton arka plan rengi */
+            border: none; /* Kenarlık yok */
+        }
+
+        .header-get-a-quote .btn:hover {
+            background-color: #d68a0d; /* Hover durumu rengi */
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class=" top-social" >
+                    <ul>
+                        <li>
+                            <a title="Facebook" href="https://facebook.com/themefisher.com">
+                                <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a title="Twitter" href="https://twitter.com/themefisher.com">
+                                <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                            </a>
+                            <a title="Instagram" href="https://instagram.com/themefisher.com">
+                                <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header start -->
+    <header id="header" class="header-one">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="logo">
+                   
+                    <nav class="navbar navbar-expand-lg" >
+                        <a class="d-block" href="index.html">
+                            <img loading="lazy" src="img/logo.png" alt="Vies Mühendislik" style="margin-top: 0px; margin-left: -50px;margin-right: 50px;">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"  aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 20%;">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>                            
+                        <div id="navbar-collapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">AnaSayfa</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kurumsal <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li class=""><a href="#">Vizyonumuz</a></li>
+                                      <li><a href="#">Misyonumuz</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="team.html" class="nav-link">Hizmet Verdiğimiz Sektörler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="testimonials.html" class="nav-link">Ürünlerimiz</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="services.html" class="nav-link">Kariyer</a>
+                                </li> 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">İletişim</a>
+                                </li>
+                            </ul>
+                            <div class="header-get-a-quote">
+                                <a class="btn btn-primary" href="contact.html">Teklif Al</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </header>
 </body>
 </html>
